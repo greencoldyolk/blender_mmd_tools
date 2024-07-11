@@ -871,14 +871,15 @@ class PMXImporter:
             self.__importDisplayFrames()
         else:
             self.__rig.initialDisplayFrames()
-
+        """
         if 'MORPHS' in types:
             self.__importGroupMorphs()
             self.__importVertexMorphs()
             self.__importBoneMorphs()
             self.__importMaterialMorphs()
             self.__importUVMorphs()
-
+        """
+        
         if self.__meshObj:
             self.__addArmatureModifier(self.__meshObj, self.__armObj)
 
